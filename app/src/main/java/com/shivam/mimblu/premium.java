@@ -95,7 +95,7 @@ public class premium extends AppCompatActivity {
                         s.setVideoDesc(ob.getString("video_description"));
                         s.setDiscountedPrice(ob.getString("discounted_price"));
 
-                        Toast.makeText(getApplicationContext(), "Response :" + ob.getString("title"), Toast.LENGTH_LONG).show();
+                       // Toast.makeText(getApplicationContext(), "Response :" + ob.getString("title"), Toast.LENGTH_LONG).show();
                         plansList.add(s);
 
                     }

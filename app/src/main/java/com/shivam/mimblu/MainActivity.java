@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(getApplicationContext(),"Hello",Toast.LENGTH_SHORT).show();
+     //   Toast.makeText(getApplicationContext(),"Hello",Toast.LENGTH_SHORT).show();
 
         mList = findViewById(R.id.recycler);
         symptomList = new ArrayList<>();
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
 
-                Toast.makeText(getApplicationContext(), "Response :" + response.toString(), Toast.LENGTH_LONG).show();//display the response on screen
+                //Toast.makeText(getApplicationContext(), "Response :" + response.toString(), Toast.LENGTH_LONG).show();//display the response on screen
 
                 JSONObject jsonObject = null;
                 try {
@@ -105,11 +105,6 @@ public class MainActivity extends AppCompatActivity {
                        s.setTitle(ob.getString("title"));
                        symptomList.add(s);
 
-                    }
-                    for(String d:fulldata){
-                        symptoms sy=new symptoms(d);
-                        symptomList.add(sy);
-                        Log.i("mydata",d);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

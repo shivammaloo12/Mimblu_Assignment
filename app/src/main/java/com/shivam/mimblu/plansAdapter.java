@@ -37,7 +37,7 @@ public class plansAdapter extends RecyclerView.Adapter<plansAdapter.ViewHolder>{
         holder.textDiscPrice.setText(p.getDiscountedPrice());
         holder.textVideoDesc.setText(p.getVideoDesc());
         holder.textCurrCode.setText(p.getCurrCode());
-        holder.textdiscCalcPrice.setText(p.getDiscCalcPrice());
+      //  holder.textdiscCalcPrice.setText(p.getDiscCalcPrice());
     }
 
 
